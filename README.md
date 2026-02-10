@@ -50,7 +50,7 @@ src/
 
 ## Setup Instructions
 1. Clone the repository
-   git clone https://github.com/username/astrum-ai.git
+   git clone https://github.com/DevAstrumAI/Website.git
 
 2. Install dependencies
    npm install
