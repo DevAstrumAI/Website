@@ -232,7 +232,7 @@ const Navbar = () => {
             </div>
           </NavDropdown>
 
-          <NavItem href="/customers">Customers</NavItem>
+          <NavItem href="/customers">Portfolio</NavItem>
           <NavItem href="#blog">Blog/TechTalk</NavItem>
           <NavItem href="#careers">Careers</NavItem>
 

@@ -30,7 +30,7 @@ export default function HowWeWork() {
         <div className="text-center mb-16 md:mb-20">
           <h2
             style={{ fontFamily: "'Gabarito', sans-serif" }}
-            className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white"
+            className="text-4xl sm:text-5xl md:text-6xl font-semi-bold tracking-tight text-white"
           >
             How We{" "}
             <span className="bg-gradient-to-r from-purple-600 to-violet-600 bg-clip-text text-transparent">
@@ -40,42 +40,24 @@ export default function HowWeWork() {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 lg:gap-10 text-left">
           {steps.map((step, index) => (
             <div
               key={index}
-              className="
-                group relative bg-gray-900/60 backdrop-blur-md 
-                border border-gray-800/50 rounded-2xl 
-                p-8 md:p-10 overflow-hidden 
-                transition-all duration-500 
-                hover:border-purple-600/40 
-                hover:shadow-xl hover:shadow-purple-900/30 
-                hover:-translate-y-3
-              "
+              className="flex flex-col items-start" // no bg, no border, no padding, no hover
             >
-              {/* Icon */}
-              <div className="mb-6 inline-flex items-center justify-center">
-                <div
-                  className="
-                  p-4 rounded-xl 
-                  bg-gradient-to-br from-gray-800 to-gray-900 
-                  border border-gray-700/50 
-                  group-hover:border-purple-500/40 
-                  transition-colors duration-300
-                "
-                >
-                  <step.icon
-                    className="w-10 h-10 text-purple-400 group-hover:text-purple-300 transition-colors"
-                    strokeWidth={1.5}
-                  />
-                </div>
+              {/* Icon – kept simple, no wrapper bg/border */}
+              <div className="mb-6">
+                <step.icon
+                  className="w-10 h-10 md:w-12 md:h-12 text-gray-300s"
+                  strokeWidth={1.5}
+                />
               </div>
 
               {/* Title */}
               <h3
                 style={{ fontFamily: "'Gabarito', sans-serif" }}
-                className="text-2xl md:text-3xl font-bold text-white mb-4"
+                className="text-2xl md:text-3xl font-semi-bold text-white mb-4"
               >
                 {step.title}
               </h3>
